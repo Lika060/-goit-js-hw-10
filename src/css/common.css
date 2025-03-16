@@ -1,0 +1,40 @@
+body {
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+a ::before,
+a :after {
+    color: inherit;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    padding: 0;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}

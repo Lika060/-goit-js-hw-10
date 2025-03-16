@@ -1,0 +1,101 @@
+body {
+    background-color: #ffffff;
+    padding: 36px 156px;
+}
+
+.btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #4a4a4c;
+    color: azure;
+    border-color: transparent;
+}
+
+.delay-label {
+    display: block;
+    width: 360px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.delay-label input {
+    border-radius: 4px;
+    border: 1px solid #808080;
+    outline: transparent;
+    width: 360px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    transition: all 250ms ease-in-out;
+}
+
+.delay-label input:hover {
+    border: 1px solid #000;
+}
+
+.delay-label input:focus-within {
+    border: 1px solid #4e75ff;
+}
+
+.fieldset {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: 360px;
+    height: 64px;
+    border: 1px solid #808080;
+    margin: 0 0 24px 0;
+}
+
+.fieldset:hover {
+    border: 1px solid #000;
+}
+
+.radio-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    padding: 8px 16px;
+}
+
+.start {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    background-color: #4e75ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: all 250ms ease-in-out;
+}
+
+.start:hover {
+    background-color: #6c8cff;
+}

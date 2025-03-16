@@ -1,0 +1,106 @@
+body {
+    background-color: #ffffff;
+    padding: 36px 156px;
+}
+
+.btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #4a4a4c;
+    color: azure;
+    border-color: transparent;
+}
+
+body button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    border: none;
+    background: #cfcfcf;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #989898;
+    transition: background-color 0.3s;
+    cursor: not-allowed;
+}
+
+button[data-start]:enabled {
+    background-color: #4e75ff;
+    cursor: pointer;
+    color: #fff;
+}
+
+button[data-start]:enabled:hover {
+    background-color: #6c8cff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+}
+
+#datetime-picker {
+    border-radius: 4px;
+    width: 272px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin-left: 8px;
+    outline: none;
+    border: 1px solid #808080;
+}
+
+#datetime-picker:hover {
+    border: 1px solid #000;
+}
+
+#datetime-picker:focus-within {
+    border: 1px solid #4e75ff;
+}
