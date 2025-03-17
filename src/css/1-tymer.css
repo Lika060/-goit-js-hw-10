@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #ffffff;
     padding: 36px 156px;
 }
@@ -103,4 +103,77 @@ button[data-start]:enabled:hover {
 
 #datetime-picker:focus-within {
     border: 1px solid #4e75ff;
+} */
+body {
+    background: linear-gradient(135deg, #f0f0f0, #d6e4ff);
+    padding: 36px 156px;
+    transition: background 0.5s ease-in-out;
 }
+
+.btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #4a4a4c;
+    color: azure;
+    border-color: transparent;
+    transform: scale(1.05);
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 32px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.value {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    transition: color 0.3s;
+}
+
+button[data-start]:enabled {
+    background-color: #4e75ff;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[data-start]:enabled:hover {
+    background-color: #6c8cff;
+    transform: scale(1.1);
+}
+і
